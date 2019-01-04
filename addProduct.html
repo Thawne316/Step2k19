@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            AddProd
+        </title>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+        <link rel="stylesheet" type="text/css" href="css/product.css"/>
+        
+    </head>
+    <body>
+        
+        <header class="header ul li">
+            <img src="./images/logo.png" class="fleft logo">
+            <ul class="fright a">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ADD PRODUCT</a></li>
+            </ul>
+            <div class="clear-fix"></div>
+        </header>
+        <section>
+        <h2>add a new product</h2>
+        <form class="add_prod_form" action="" method="">
+            <ul>
+                <li>
+                    <label for="pname">Product Name</label></br>
+                    <input type="text" name="pname" id="pname" required>
+                </li>
+                <li>
+                    <label for="brand">Brand</label></br>
+                    <input type="text" name="brand" id="brand" required>
+                </li>  
+                <li>
+                    <div class=half>
+                        <label for="catagory">Catagory</label></br>
+                        <select name="catagory">
+                            <option value="Men">Men</option>
+                            <option value="Women">Women</option>
+                            <option value="Kids">Kids</option>
+                        </select>
+                    </div> <div class="half">
+                        <label for="rating">Rating</label>
+                        <select name="rating">
+                            <option value="5">5</option>
+                            <option value="4">4</option>
+                            <option value="3">3</option>
+                            <option value="2">2</option>
+                            <option value="1">1</option>
+                        </select>
+                   
+                </div>
+                </li>
+                <li>
+                    <label for="price">Price</label></br>
+                    <input type="number" name="price" id="price" required>
+                </li>      
+                <li>
+                    <label for="sd" >Short Description</label></br>
+                    <textarea name="sd" id="sd" rows=10 cols=40></textarea>
+                </li>
+                <li>
+                    <label for="url">Product image URL</label></br>
+                    <input type="url" name="url" id="url" >
+                </li>
+                <li>
+                <div class="half">
+                        <label for="size">Size</label></br>
+                        <select name="size">
+                            <option value="S">Small</option>
+                            <option value="M">Medium</option>
+                            <option value="L">Large</option>
+                            <option value="XL">Extra Large</option>
+                        </select>
+                </div> <div class="half">
+                        <label for="color">Color</label>
+                        <select name="color">
+                            <option value="red">Red</option>
+                            <option value="blue">Blue</option>
+                            <option value="green">Green</option>
+                            <option value="black">Black</option>
+                            <option value="white">White</option>
+                        </select>
+                        </div>
+                </li>
+            </ul>     
+            <button id="save">Save</button>      
+                
+        </form>
+        </section>
+        <div class="wrapper " id="example"></div>
+        <footer>
+            <div class="link-group fleft img">
+                <a href="https://www.facebook.com"><img src="./images/facebook.png"></a>
+                <a href="https://www.instagram.com"><img src="./images/instagram.png"></a>
+                <a href="https://www.twitter.com"><img src="./images/twitter.png"></a>
+            </div>
+            <img src="./images/logo.png" class="fright logo">
+        </footer>
+    </body>
+</html>
